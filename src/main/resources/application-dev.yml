@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: admin
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/starOcean?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    #连接池初始化大小
+    initialSize: 1
+    #最小活跃数量
+    minIdle: 3
+    #查询链接状态的sql
+    validationQuery: select 'x'
+    # 配置获取连接等待超时的时间
+    maxWait: 60000
+
